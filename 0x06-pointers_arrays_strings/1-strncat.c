@@ -1,31 +1,32 @@
 #include "main.h"
 /**
- * _strncat - concatenate two strings
- * @dest: first char pointer parameter
- * @src: second char pointer parameter
- * @n: third parameter
- * Return: dest
+ *_strncat -  concatenates two strings
+ *@dest: A pointer to an char that will be updated
+ *@src: A pointer to an char that will be updated
+ *@n: value
+ *Return: dest
  */
+
 char *_strncat(char *dest, char *src, int n)
+
 {
 	int i, j;
 
 	i = 0;
-	while (dest[i] != '\0')
+	while (dest[i] != '\0') /*WHILE count character */
 	{
 		i++;
 	}
 
 	j = 0;
-
-	while (j < n && src[j] != '\0')
+	while (j < n && src[j] != '\0') /*WHILE concatenate dest with src*/
 	{
 		dest[i] = src[j];
-		j++;
-		i++;
+		j++;  /*sum j*/
+		i++; /**sum i*/
 	}
 
-	dest[i] = '\0';
+	dest[i] = '\0'; /*the terminating null byte*/
 
 	return (dest);
 }
