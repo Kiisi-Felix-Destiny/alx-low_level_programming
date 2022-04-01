@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
 {
 	int count, mul;
 
-	if (argc > 1)
+	if (argc == 3)
 	{
 		for (count = 0; count < argc; count++)
 		{
