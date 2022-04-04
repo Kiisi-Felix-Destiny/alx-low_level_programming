@@ -41,11 +41,11 @@ char *_strcpy(char *dest, char *src)
 }
 
 /**
- * _strup - array for prints a string
+ * _strdup - array for prints a string
  * @str: array of elements
  * Return: pointer
  */
-char *_strup(char *str)
+char *_strdup(char *str)
 {
 	char *dest;
 
@@ -55,7 +55,7 @@ char *_strup(char *str)
 	{
 		return (NULL);
 	}
-	size = _strlen(size) + 1;
+	size = _strlen(str) + 1;
 
 	dst = (char *) malloc(size * sizeof(char));
 
