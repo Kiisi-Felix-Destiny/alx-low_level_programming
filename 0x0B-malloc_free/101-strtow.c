@@ -1,7 +1,6 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include "holberton.h"
 
 /**
  * strtow - splits a string into words
