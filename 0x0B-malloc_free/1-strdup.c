@@ -3,9 +3,9 @@
 #include <stdlib.h>
 
 /**
- * _strlen - count array
- * @s: array of elements
- * Return: i
+ *_strlen - count arrray
+ *@s: array of elements
+ *Return: i
  */
 
 int _strlen(char *s)
@@ -13,17 +13,19 @@ int _strlen(char *s)
 	unsigned int i;
 
 	i = 0;
-	while (s[i] != '\0')
+	while (s[i] != '\0') /*Count character of string*/
 	{
 		i++;
 	}
+
 	return (i);
 }
+
 /**
- * _strcpy - copy arrays
- * @src: array of elements
- * @dest: dest array
- * Return: dest
+ *_strcpy - copy arrays
+ *@src: array of elements
+ *@dest: dest array
+ *Return: dest
  */
 
 char *_strcpy(char *dest, char *src)
@@ -41,20 +43,21 @@ char *_strcpy(char *dest, char *src)
 }
 
 /**
- * _strdup - array for prints a string
- * @str: array of elements
- * Return: pointer
+ *_strdup - array for prints a string
+ *@str: array of elements
+ *Return: pointer
  */
+
 char *_strdup(char *str)
 {
 	char *dst;
-
 	unsigned int size;
 
 	if (str == 0)
 	{
 		return (NULL);
 	}
+
 	size = _strlen(str) + 1;
 
 	dst = (char *) malloc(size * sizeof(char));
