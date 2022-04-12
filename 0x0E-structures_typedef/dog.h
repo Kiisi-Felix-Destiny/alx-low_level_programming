@@ -2,6 +2,12 @@
 #define _DOG_
 
 /**
+ * struct dog_t - dog_t struct
+ */
+
+typedef struct dog dog_t;
+
+/**
  * struct dog - dog struct
  * @name: first member
  * @age: second member
